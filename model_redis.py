@@ -1,8 +1,9 @@
-from model import Model
 import pickle
 import redis  # type: ignore
 import sys
 from typing import Dict, List, Tuple
+
+from model import Model
 
 
 class RedisModel(Model):

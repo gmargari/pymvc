@@ -1,5 +1,7 @@
-from typing import List, Tuple, Union
+from typing import List, Tuple
+
 from observable import Observable
+
 
 class View(Observable):
     def __init__(self) -> None:
@@ -13,4 +15,3 @@ class View(Observable):
 
     def quit(self) -> None:
         raise NotImplemented
-

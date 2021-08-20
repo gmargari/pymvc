@@ -1,6 +1,6 @@
 from typing import List, Tuple
+
 from view import View
-import sys
 
 
 class TerminalView(View):

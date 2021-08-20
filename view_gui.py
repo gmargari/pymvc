@@ -1,5 +1,7 @@
 from typing import List, Tuple
+
 import PySimpleGUI as sg  # type: ignore
+
 from view import View
 
 

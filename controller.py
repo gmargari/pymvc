@@ -1,9 +1,4 @@
-import asyncio
 from model import Model
-import sys
-from typing import List
-import threading
-import time
 from view import View
 
 

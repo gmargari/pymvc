@@ -1,5 +1,6 @@
-from model import Model
 from typing import Dict, List, Tuple
+
+from model import Model
 
 
 class BasicModel(Model):

@@ -13,5 +13,3 @@ class Model(object):
 
     def get_objects(self) -> List[Tuple[str, int]]:
         raise NotImplemented
-
-

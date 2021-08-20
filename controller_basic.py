@@ -1,6 +1,5 @@
 from controller import Controller
 from model import Model
-from typing import List
 from view import View
 
 

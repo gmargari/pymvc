@@ -16,5 +16,6 @@ class MyApp(object):
     def run(self) -> None:
         self.controller.run()
 
+
 app = MyApp()
 app.run()
