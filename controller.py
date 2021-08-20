@@ -22,7 +22,7 @@ class Controller(object):
         # Run each view in its own thread
         self.threads = []
         for view in self.views:
-            thread = threading.Thread(target=view.run, daemon=True)
+            thread = threading.Thread(target=view.main_loop, daemon=True)
             thread.start()
             self.threads.append(thread)
 

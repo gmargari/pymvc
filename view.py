@@ -8,7 +8,7 @@ class View(Observable):
     def show_objects(self, objects: List[Tuple[str, int]]) -> None:
         raise NotImplemented
 
-    def run(self) -> None:
+    def main_loop(self) -> None:
         raise NotImplemented
 
     def quit(self) -> None:

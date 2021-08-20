@@ -16,7 +16,7 @@ class GUIView(View):
     def show_objects(self, objects: List[Tuple[str, int]]) -> None:
         self.window['fruits_label'].update('\n'.join('%-10s: %3d' % (name, num) for name, num in objects))
 
-    def run(self) -> None:
+    def main_loop(self) -> None:
         while True:
             event, values = self.window.read()
 

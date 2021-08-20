@@ -10,7 +10,7 @@ class TerminalView(View):
     def show_objects(self, objects: List[Tuple[str, int]]) -> None:
         print('\n'.join('%-10s: %3d' % (name, num) for name, num in objects))
 
-    def run(self) -> None:
+    def main_loop(self) -> None:
         while True:
             print('-' * 30)
             print('a <fruit>: add fruit\nr <fruit>: remove fruit\ns: show fruits\nq: quit')
