@@ -6,7 +6,7 @@ import time
 from view import View
 
 
-class Controller:
+class Controller(object):
     def __init__(self, model: Model, views: List[View]) -> None:
         self.model = model
         self.views = views

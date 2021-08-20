@@ -2,6 +2,7 @@ from typing import List, Tuple
 from view import View
 import sys
 
+
 class TerminalView(View):
     def __init__(self) -> None:
         super().__init__()
@@ -19,7 +20,6 @@ class TerminalView(View):
 
             if not len(words):
                 continue
-
             if words[0] == 'a':
                 fruit = words[1]
                 self.notify_observers('add', fruit)
