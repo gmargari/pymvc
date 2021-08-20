@@ -7,8 +7,8 @@ from controller_basic import BasicController
 class MyApp(object):
     def __init__(self) -> None:
         model = BasicModel()
-        #view = TerminalView()
-        view = GUIView()
+        view = TerminalView()
+        #view = GUIView()
         self.controller = BasicController(model, view)
 
     def run(self) -> None:
