@@ -5,8 +5,8 @@ from view import View
 
 
 class BasicController(Controller):
-    def __init__(self, model: Model, views: List[View]) -> None:
-        super().__init__(model, views)
+    def __init__(self, model: Model, view: View) -> None:
+        super().__init__(model, view)
 
     def view_changed(self, *args, **kwargs) -> None:
         if args[0] == 'add':
@@ -27,5 +27,4 @@ class BasicController(Controller):
         self.model.remove_object(fruit)
 
     def show_fruits(self) -> None:
-        for view in self.views:
-            view.show_objects(self.model.get_objects())
+        self.view.show_objects(self.model.get_objects())
