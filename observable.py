@@ -5,7 +5,7 @@ class Observable(object):
     def __init__(self) -> None:
         self.observers: List[Callable] = []
 
-    def register(self, callback: Callable) -> Callable:
+    def add_observer(self, callback: Callable) -> Callable:
         self.observers.append(callback)
         return callback
 

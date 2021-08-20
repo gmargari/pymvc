@@ -8,7 +8,7 @@ class Controller(object):
         self.view = view
 
         # If view is modified, call view_changed()
-        self.view.register(self.view_changed)
+        self.view.add_observer(self.view_changed)
 
     def run(self) -> None:
         self.view.main_loop()
