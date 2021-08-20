@@ -15,11 +15,8 @@ class Controller(object):
         # If view is modified, call view_changed()
         self.view.register(self.view_changed)
 
-    def view_changed(self, *args, **kwargs) -> None:
-        raise NotImplemented
-
     def run(self) -> None:
         self.view.main_loop()
 
-    def quit(self) -> None:
-        self.view.quit()
+    def view_changed(self, *args, **kwargs) -> None:
+        raise NotImplemented

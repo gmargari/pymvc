@@ -27,4 +27,8 @@ class BasicController(Controller):
         self.model.remove_object(fruit)
 
     def show_fruits(self) -> None:
-        self.view.show_objects(self.model.get_objects())
+        objects = self.model.get_objects()
+        self.view.show_objects(objects)
+
+    def quit(self) -> None:
+        self.view.quit()
